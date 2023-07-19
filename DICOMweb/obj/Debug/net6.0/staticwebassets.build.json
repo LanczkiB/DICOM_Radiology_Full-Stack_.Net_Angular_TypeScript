@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ikGKKUm95Ka2Vcnd3YfHajbndScR1tvw7mYmicwJq64=",
+  "Source": "DICOMweb",
+  "BasePath": "_content/DICOMweb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

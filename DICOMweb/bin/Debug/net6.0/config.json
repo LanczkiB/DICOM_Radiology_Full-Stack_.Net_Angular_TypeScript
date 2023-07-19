@@ -1,0 +1,25 @@
+[
+    {
+      "Trace": {
+        "TraceIsOn": "false"
+      }
+    },
+    {
+      "Sample": {
+        "Root": "/dicom-web/",
+        "Host": "localhost",
+        "HttpPort": 8042,
+        "PublicRoot": "/dicom-web/",
+        "Secure": "false"
+      }
+    },
+    {
+      "Server2": {
+        "Root": "/dicom-web/",
+        "Host": "localhost",
+        "HttpPort": 8042,
+        "PublicRoot": "/dicom-web/",
+        "Secure": "false"
+      }
+    }
+]

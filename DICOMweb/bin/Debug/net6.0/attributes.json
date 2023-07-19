@@ -1,0 +1,18 @@
+{
+	"Study":{
+		"StudyTime" : "false",
+		"AccessionNumber" : "false",
+		"PatientID": "false",
+		"ModalitiesInStudy" : "false",
+		"ReferringPhisicianName" : "false",
+		"StudyID" : "false"
+	},
+	"Series":{
+		"Modality" : "false",
+		"StepStartDate" : "false",
+		"StepStartTime" : "false",
+		"RequestAttributesSequence" : "false",
+		"ScheduledProcedureStepID" : "false",
+		"RequestedProcedureID" : "false"
+	}
+}
