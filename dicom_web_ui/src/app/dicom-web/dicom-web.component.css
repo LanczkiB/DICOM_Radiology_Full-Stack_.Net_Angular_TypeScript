@@ -1,0 +1,97 @@
+button{
+    padding: 7pt;
+    margin: 5pt;
+}
+
+#detail{
+    margin:0pt;
+    margin-left: 12pt;
+    width:5vh;
+    height:5vh;
+    padding: 0pt;
+}
+
+.row{
+    justify-content: center!important;
+}
+
+.row.setting{
+    justify-content: left!important;
+}
+
+span{
+    font-weight: 700;
+}
+
+.input-group{
+    text-align: center;
+    margin-bottom: 8pt!important;
+    padding: 0pt;
+    width:80%;
+    height:5vh;
+}
+
+.input-group-text{
+    width:50%;
+}
+
+.button-group{
+    margin-top: 5vh!important;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin: 40pt;
+    font-size: 70pt;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.card-body{
+    height:auto;
+    padding-top:10vh;
+    padding-bottom:5vh;
+}
+
+#server{
+    background-color: white;
+    width:43%!important;
+    height: 5vh!important;
+}
+
+h2{
+    margin-left:20pt;
+    font-size: 15pt;
+    font-weight: 700;
+    color:white
+}
+
+#checkbox{
+    margin-left:20pt;
+    margin-right: 3pt;
+}
+
+label{
+    width:200pt;
+    margin:5pt;
+    font-weight: 100;
+    color:rgb(106, 142, 175);
+}
+
+.card-footer{
+    min-height:70pt;
+    max-height:70pt;
+    background-color: rgb(4, 6, 30);
+}
+
+.card-header{
+    height:115pt;
+    background-color: rgb(4, 6, 36);
+}
+
+.card{
+    height: 100vh;
+    background-color:rgb(35, 33, 58)!important;
+}

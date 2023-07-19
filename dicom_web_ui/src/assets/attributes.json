@@ -1,0 +1,32 @@
+[
+    {
+      "attrName": "StudyDate",
+      "attrValue": "",
+      "selected": true,
+      "type": "study"
+    },
+    {
+      "attrName": "PatientName",
+      "attrValue": "",
+      "selected": true,
+      "type": "study"
+    },
+    {
+      "attrName": "StudyInstanceUID",
+      "attrValue": "",
+      "selected": true,
+      "type": "study"
+    },
+    {
+      "attrName": "SeriesInstanceUID",
+      "attrValue": "",
+      "selected": true,
+      "type": "series"
+    },
+    {
+      "attrName": "SeriesNumber",
+      "attrValue": "",
+      "selected": true,
+      "type": "series"
+    }
+  ]

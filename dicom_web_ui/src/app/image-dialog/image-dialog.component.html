@@ -1,0 +1,31 @@
+<html>
+<div class="my-dialog">
+  <div class=header>
+      <button class="close" mat-button (click)="modalDialogExit()">X</button>
+      <h1>Instances preview</h1>
+  </div>
+  <div class="body">
+      <div layout="row">
+          <button class="col-md-1 left" *ngIf="done" mat-button color="white" (click)="modalDialogPrevious()" [disabled]="counter>0? null:'disabled'">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+              <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+          </button>
+          <label class="loader col-md-7" *ngIf="!done"></label>
+          <img class="col-md-7" *ngIf="done" [src]='imageToShow'>
+          <button class="col-md-1 right" *ngIf="done" mat-button color="white" (click)="modalDialogNext()" [disabled]="counter+1<instances.length? null:'disabled'">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </button>
+      </div>
+  </div>
+  <div class="footer">
+    <h3>{{counter+1}}/{{instances.length}}</h3>
+    <h3>Instance UID: {{instanceUID}}</h3>
+    <label>Serie UID: {{seriesUID}}</label>
+    <label>Study UID: {{studyUID}}</label>
+  </div>
+</div></html>

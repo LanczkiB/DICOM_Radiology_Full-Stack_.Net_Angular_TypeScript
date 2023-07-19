@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height:auto; }
+
+body { margin: 0; font-family:Arial, Helvetica, sans-serif!important; background-color:rgb(35, 33, 58)!important;}
+.mat-dialog-container {
+    background-color:rgb(35, 33, 58)!important;
+    padding: 0pt!important;
+}
+

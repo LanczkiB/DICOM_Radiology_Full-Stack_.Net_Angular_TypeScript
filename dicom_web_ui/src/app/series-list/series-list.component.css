@@ -1,0 +1,50 @@
+
+th{
+    white-space: nowrap;
+}
+
+.table-responsive{
+    overflow: scroll;
+    max-height:100%;
+}
+
+th{
+    background-color: white;
+    color: black;
+}
+
+th svg{
+    color:black;
+}
+
+h2{
+    color:white;
+    font-size: 20pt;
+}
+
+label{
+    color:white;
+}
+
+button{
+    background: none;
+    border: none;
+    transform: scale(0.7);
+    padding: 0pt;
+    padding-left: 5pt;
+    margin:0pt;
+}
+
+button:disabled{
+    background: none;
+    border: none;
+}
+
+button:hover{
+    background: none;
+    border: none;
+}
+
+svg{
+    color:white;
+}
