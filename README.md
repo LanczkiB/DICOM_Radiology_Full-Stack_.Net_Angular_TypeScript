@@ -1,27 +1,12 @@
-# HelloWorld
+# Querying radiological archives based on DICOMweb standard
+## .NET 6.0, Angular, DICOM, TypeScript
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
+Over the years medical informatics has gained a greater role in the field of medicine. Labour shortage is a constant problem in healthcare, which increases the demand for automation of as many parts of the diagnostic process as possible and to support them with software solutions. The use of image-processing machines and their software make the doctors’ work easier by supporting the analysis of the produced images. Ultrasound, MRI, CT and X-ray machines capture images of patients in different ways, so the format of the images produced varies. The DICOM standard is intended to guarantee universal communication between image processing machines.
 
-## Development server
+My project presents the development of a web application to filter and save data stored in medical archives. The user can search for specific properties of both studies and series. In addition, the user can download selected files or view their image representation.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The aim of the system I created is to be easily integrated into the developments of the Medical Department of Evosoft Hungary Kft. and to replace the DICOM communication protocol they use with a faster and more maintainable HTTP REST-based alternative.
 
-## Code scaffolding
+## Configuring the server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To run my solution, I need to run the .Net and Angular projects separately run separately. To run the .Net project, navigate to the DICOMweb/bin/Debug/net6.0 folder and run exe while the Angular project can be implemented by running the dicomweb_web_ui from a command line window running from the "ng serve" command (if the node_modules folder is missing, the "npm install" command before running). You can then see on HTTP://localhost:4200/dicom-web the user interface to check the functionality of the backend server I wrote. However, for full testing I recommend using the Orthanc server (or other, DICOMweb communication server), since without a server you can only see the error message displayed on the interface, the functions cannot be tested. The Orthanc server must be downloaded (https://www.orthanc-server.com/download.php) and configured (https://book.orthanc-server.com/users/configuration.html).I attached some anonymized DICOM files for you to upload them to the server. To do this use to Upload button of the Orthanc Explorer (http://localhost:8042/app/explorer.html). Thus, after rewriting the config.json file the configured server can be selected on my user interface and you can start testing my solution.
